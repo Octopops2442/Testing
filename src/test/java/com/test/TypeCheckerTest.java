@@ -400,7 +400,7 @@ class TypeCheckerTest {
             Assertions.assertThrows(Exception.class, ()->t.TypeCheckGreaterBoolExpr((GreaterBoolExpr) e ));
 
             //Normal path
-            final Expr e2 = new LesserBoolExpr(new NumExpr(10), new NumExpr(1));
+            final Expr e2 = new GreaterBoolExpr(new NumExpr(10), new NumExpr(1));
             Assertions.assertEquals(new BoolType(), t.TypeCheckGreaterBoolExpr((GreaterBoolExpr) e2));
         }
         catch (Exception e){

@@ -1,0 +1,5 @@
+Test case strategy:- 
+Control flow graphs(graph based testing) with only control flow criteria. 
+Test cases are designed for edge coverage and for prime paths coverage.
+
+
